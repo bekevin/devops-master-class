@@ -44,4 +44,6 @@ http://localhost:8100/currency-conversion/from/EUR/to/INR/quantity/10
 #### How does Currency Conversion know the location of Currency Exchange?
 - You don't want to HARDCODE
 - Configure an Environment Variable - `CURRENCY_EXCHANGE_SERVICE_HOST`
-- --env CURRENCY_EXCHANGE_SERVICE_HOST=http://currency-exchange
+- --env CURRENCY_EXCHANGE_SERVICE_HOST=http://currency-exchange 
+- (This will be the name of the currency exchange microservice)
+- (found in the file path: microservices\02-currency-conversion-microservice-basic\src\main\java\com\in28minutes\microservices\currencyconversionservice\resource\CurrencyExchangeServiceProxy.java)

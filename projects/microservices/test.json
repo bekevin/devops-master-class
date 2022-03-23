@@ -1,0 +1,45 @@
+[
+    {
+        "Name": "currency-network",
+        "Id": "841fefd96ed2b547ea3d02cfbd6c893079377435d71d63c9bb58d02a8322e916",
+        "Created": "2022-03-22T00:02:59.785566377Z",
+        "Scope": "local",
+        "Driver": "bridge",
+        "EnableIPv6": false,
+        "IPAM": {
+            "Driver": "default",
+            "Options": {},
+            "Config": [
+                {
+                    "Subnet": "172.18.0.0/16",
+                    "Gateway": "172.18.0.1"
+                }
+            ]
+        },
+        "Internal": false,
+        "Attachable": false,
+        "Ingress": false,
+        "ConfigFrom": {
+            "Network": ""
+        },
+        "ConfigOnly": false,
+        "Containers": {
+            "78820019acde06b685f428c2c51cf3ede0756b440be460d1feaab311d627bb49": {
+                "Name": "exchange",
+                "EndpointID": "f3571a50a0de74acac9e023ef0699b0bf41cf1f4f3eb0a7d426cc59afac7591a",
+                "MacAddress": "02:42:ac:12:00:02",
+                "IPv4Address": "172.18.0.2/16",
+                "IPv6Address": ""
+            },
+            "e2aea344015c6316b80a692dcc55ee7c5adf3ab69aa54341fdeac73d4000a26e": {
+                "Name": "conversion",
+                "EndpointID": "2d428f8d29fb144f3ebf6635619028bcb78fcadb30e7cffad8b7fdf67e16effe",
+                "MacAddress": "02:42:ac:12:00:03",
+                "IPv4Address": "172.18.0.3/16",
+                "IPv6Address": ""
+            }
+        },
+        "Options": {},
+        "Labels": {}
+    }
+]
